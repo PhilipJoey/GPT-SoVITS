@@ -21,4 +21,4 @@ sudo apt install ffmpeg
 cd v2
 bash scripts/infer.sh # output save in 
 ```
-1. output save in `single_infer`
+3. output save in `single_infer`
