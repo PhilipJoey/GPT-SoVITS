@@ -1,0 +1,19 @@
+train:
+  batch_size: 32
+  epochs: 8
+  text_low_lr_rate: 0.005
+  pretrained_s2G: pretrained_models/gsv-v2final-pretrained/s2G2333k.pth
+  pretrained_s2D: pretrained_models/gsv-v2final-pretrained/s2D2333k.pth
+  if_save_latest: true
+  if_save_every_weights: true
+  save_every_epoch: true
+  gpu_numbers: 0-1
+  grad_ckpt: False
+  lora_rank: 32
+model:
+  version: v2
+data:
+  exp_dir: logs/my_exp
+save_weight_dir: weights/SoVITS_weights_v2
+name: my_exp
+version: v2

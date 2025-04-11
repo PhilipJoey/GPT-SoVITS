@@ -1,0 +1,13 @@
+train:
+  batch_size: 16
+  epochs: 8
+  pretrained_s1: GPT_SoVITS/pretrained_models/gsv-v2final-pretrained/s1bert25hz-5kh-longer-epoch=12-step=369668.ckpt
+  save_every_n_epoch: 4
+  if_save_every_weights: true
+  if_save_latest: false
+  if_dpo: false
+  half_weights_save_dir: weights/GPT_weights_v2
+  exp_name: my_exp
+train_semantic_path: logs/my_exp/6-name2semantic.tsv
+train_phoneme_path: logs/my_exp/2-name2text.txt
+output_dir: logs/my_exp/logs_s1_v2
